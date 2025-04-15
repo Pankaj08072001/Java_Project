@@ -1,0 +1,6 @@
+create database IDPassword;
+use IDPassword;
+create table UserIDANDPassword(username varchar(255), email varchar(255), password varchar(255));
+INSERT INTO useridandpassword (username, email, password) 
+VALUES ('pakj', 'panku@.in', '123');
+select * From useridandpassword;

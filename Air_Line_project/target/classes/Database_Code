@@ -1,0 +1,30 @@
+create database Air_Tickket;
+
+use Air_Tickket;
+
+CREATE TABLE TICKETDETAILS (
+    mid VARCHAR(50),           -- For MID, assuming it's a string (e.g., "MID123")
+    fname VARCHAR(255),        -- For First Name (assuming max length of 255)
+    destinationTO VARCHAR(255), -- For Destination To (assuming max length of 255)
+    destinationFrom VARCHAR(255), -- For Destination From (assuming max length of 255)
+    contact bigint(15),         -- For Contact, a long value (NUMBER for large integers)
+    travelDate VARCHAR(20),    -- For Date, as it is being stored as string
+    journeyTime VARCHAR(50),   -- For Journey Time, stored as a string
+    price float(10,2),         -- For Price, as float (stored as NUMBER with 2 decimal places)
+    classType VARCHAR(50),     -- For Class Type (assuming max length of 50)
+    ticketID VARCHAR(50)       -- For Ticket ID (assuming max length of 50)
+);
+
+CREATE TABLE customerDetails (
+    fname VARCHAR(100),    -- First Name, assumed max length of 100
+    lname VARCHAR(100),    -- Last Name, assumed max length of 100
+    mid VARCHAR(50),       -- Member ID, assumed max length of 50
+    contact bigint (15),     -- Contact number, using NUMBER for long values (up to 15 digits)
+    pword VARCHAR(255)     -- Password, assumed max length of 255 for security reasons
+);
+
+use Air_Tickket;
+drop table customerDetails;
+drop table TICKETDETAILS;
+
+select * from CustomerDetails;

@@ -1,7 +1,7 @@
 <%@page import="java.util.List"%>
-<%@page import="com.hms.db.DBConnection"%>
-<%@page import="com.hms.entity.Specialist"%>
-<%@page import="com.hms.dao.SpecialistDAO"%>
+<%@page import="com.pankaj.db.DBConnection"%>
+<%@page import="com.pankaj.entity.Specialist"%>
+<%@page import="com.pankaj.dao.SpecialistDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 

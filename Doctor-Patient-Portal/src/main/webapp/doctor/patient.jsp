@@ -1,9 +1,9 @@
-<%@page import="com.hms.entity.Appointment"%>
+<%@page import="com.pankaj.entity.Appointment"%>
 <%@page import="java.util.List"%>
-<%@page import="com.hms.entity.Doctor"%>
-<%@page import="com.hms.dao.AppointmentDAO"%>
-<%@page import="com.hms.db.DBConnection"%>
-<%@page import="com.hms.dao.DoctorDAO"%>
+<%@page import="com.pankaj.entity.Doctor"%>
+<%@page import="com.pankaj.dao.AppointmentDAO"%>
+<%@page import="com.pankaj.db.DBConnection"%>
+<%@page import="com.pankaj.dao.DoctorDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 

@@ -1,5 +1,5 @@
-<%@page import="com.hms.db.DBConnection"%>
-<%@page import="com.hms.dao.DoctorDAO"%>
+<%@page import="com.pankaj.db.DBConnection"%>
+<%@page import="com.pankaj.dao.DoctorDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 

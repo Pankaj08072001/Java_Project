@@ -1,0 +1,62 @@
+create database hospital;
+use hospital;
+CREATE TABLE doctor (
+    id INT NOT NULL AUTO_INCREMENT,
+    fullName VARCHAR(100) NOT NULL,
+    dateOfBirth DATE,
+    qualification VARCHAR(100),
+    specialist VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    phone VARCHAR(20),
+    password VARCHAR(255),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE specialist (
+    id INT NOT NULL AUTO_INCREMENT,
+    specialist_name VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO specialist (specialist_name) VALUES
+('Cardiologist'),
+('Dermatologist'),
+('Neurologist'),
+('Orthopedic Surgeon'),
+('Pediatrician'),
+('General Physician'),
+('Psychiatrist'),
+('ENT Specialist'),
+('Gynecologist'),
+('Dentist');
+
+CREATE TABLE user_details (
+    id INT NOT NULL AUTO_INCREMENT,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+select * from user_details;
+
+CREATE TABLE appointment (
+    id INT NOT NULL AUTO_INCREMENT,
+    userId INT NOT NULL,
+    fullName VARCHAR(100) NOT NULL,
+    gender VARCHAR(10),
+    age VARCHAR(10),
+    appointmentDate DATE NOT NULL,
+    email VARCHAR(100),
+    phone VARCHAR(20),
+    diseases VARCHAR(255),
+    doctorId INT NOT NULL,
+    address VARCHAR(255),
+    status VARCHAR(50),
+    PRIMARY KEY (id),
+    FOREIGN KEY (userId) REFERENCES user_details(id),
+    FOREIGN KEY (doctorId) REFERENCES doctor(id)
+);
+
+select * from doctor;
+select * from user_details;
+select * from doctor;
+drop database hospital;

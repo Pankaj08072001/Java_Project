@@ -41,7 +41,7 @@
 .my-bg-img {
 	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
 		url("img/hospital1.jpg");
-	height: 20vh;
+	height: 15vh;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
